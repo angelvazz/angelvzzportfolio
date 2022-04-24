@@ -1,0 +1,43 @@
+.card-component{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-border{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px 0px rgb(0, 0, 0);
+    border-radius: 2%;
+    
+}
+
+.card-text{
+    width: 20vw;
+    margin-right: .5rem;
+}
+
+.card-text span{
+    font-size: 22px;
+    text-decoration:underline;
+}
+
+.card-text p{
+    margin-top: 1.5rem;
+    font-size: 20px;
+}
+
+.card-image img{
+    width: 40vw;
+    height: 60vh;
+    border-radius: 2%;
+}
