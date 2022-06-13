@@ -43,13 +43,12 @@ const SocialApp = () => {
         <Box
           sx={{
             display: 'flex',
-            alignItems: 'flex-end',
             justifyContent: 'center',
             width: 286,
             height: 70,
           }}
         >
-          <Paper elevation={3} sx={{ width: 300, height: 70, ml: 1, mr: 1 }}>
+          <Paper elevation={3} sx={{ width: '100%', height: 70, ml: 1, mr: 1 }}>
             <AccountCircle sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
             <TextField
               id="input-with-sx"

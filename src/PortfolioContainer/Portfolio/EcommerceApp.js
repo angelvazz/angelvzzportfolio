@@ -57,7 +57,7 @@ const EcommerceApp = () => {
             <p className="off-p">30% off in store</p>
           </Paper>
         </Box>
-        <h3 className="ofertas-h3">Trending offers</h3>
+        <p className="ofertas-h3">Trending offers</p>
         <div className="ofertas-tendencia">
           <div>
             <img className="ropa-img2" src={img7} alt="ecommerce" />

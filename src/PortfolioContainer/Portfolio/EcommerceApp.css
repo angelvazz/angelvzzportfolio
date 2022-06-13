@@ -1,8 +1,3 @@
-.ecommerce-h2 {
-  margin-left: -1.5rem;
-  font-size: 1.4vmax;
-}
-
 .product-ecommerce {
   background: rgb(237, 255, 252);
   background: linear-gradient(
@@ -17,7 +12,6 @@
 
 .title-ecommerce {
   color: #fff;
-  align-items: center;
   display: flex;
   border-bottom: 1px solid #fff;
   justify-content: space-evenly;
@@ -25,14 +19,21 @@
   padding-bottom: 0.5rem;
 }
 
+.ecommerce-h2 {
+  margin-left: -1rem;
+  font-size: 1.4vmax;
+}
+
 /* medio */
 
 .medio-ecommerce {
+  display: flex;
+  align-items: center;
   background-image: url('./images/ecommerce.jpg');
-  background-size: 100%;
+  background-size: 20vw;
   background-repeat: no-repeat;
-  box-shadow: inset 0px -20px 20px 0px rgba(15, 189, 199, 1);
-  margin-bottom: -2rem;
+  height: 20vh;
+  box-shadow: inset 0px -10px 5px 2px rgba(15, 189, 199, 1);
 }
 
 .medio {
@@ -46,24 +47,22 @@
 }
 
 .h2-mejores-promos {
-  display: grid;
-  align-items: center;
+  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 1px 1px 2px black;
-  height: 20vh;
 }
 
 .oferta-p {
   color: rgb(184, 38, 38);
   font-size: 14px;
-  margin-left: 5px;
+  margin-top: 0.5rem;
 }
 
 .off-p {
   font-size: 12px;
-  margin-left: 5px;
+  margin-top: -1rem;
 }
 
 .ofertas-h3 {
@@ -73,16 +72,16 @@
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   margin: 0 0.5rem 0 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .ofertas-tendencia {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-evenly;
   background-color: #fff;
-  margin: 0 0.5rem 1rem 0.5rem;
+  margin: 0 0.5rem 0 0.5rem;
 }
 
 .ropa-seleccionada {
@@ -107,8 +106,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
 }
 
 /* Imagenes */
@@ -120,205 +118,7 @@
 
 .ropa-img2 {
   padding: 0.5rem;
-  width: 180px;
+  width: 130px;
   height: 120px;
   border-radius: 1rem;
-}
-
-/* Celular */
-
-@media screen and (min-width: 200px), (max-width: 600) {
-  .product-ecommerce {
-    max-width: 80vw;
-  }
-
-  .ecommerce-h2 {
-    margin-left: -1rem;
-    font-size: 2.6vmax;
-  }
-
-  .medio-ecommerce {
-    background-image: url('./images/ecommerce.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    box-shadow: inset 0px -40px 20px 0px rgba(15, 189, 199, 1);
-    margin-bottom: -1rem;
-  }
-
-  .h2-mejores-promos {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 1px 1px 2px black;
-    height: 25vh;
-  }
-
-  .ropa-img2 {
-    padding: 0.1rem;
-    width: 120px;
-    height: 120px;
-    border-radius: 0.5rem;
-  }
-}
-
-/* Tableta */
-
-@media screen and (min-width: 650px), (max-width: 850) {
-  .product-ecommerce {
-    max-width: 38vw;
-  }
-
-  .ecommerce-h2 {
-    margin-left: -0.5rem;
-    font-size: 2.2vmax;
-  }
-
-  .medio-ecommerce {
-    background-image: url('./images/ecommerce.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    box-shadow: inset 0px -40px 20px 0px rgba(15, 189, 199, 1);
-    margin-bottom: -1rem;
-  }
-
-  .h2-mejores-promos {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 1px 1px 2px black;
-    height: 23vh;
-  }
-
-  .ropa-img2 {
-    padding: 0.1rem;
-    width: 120px;
-    height: 120px;
-    border-radius: 0.5rem;
-  }
-}
-
-/* Laptop 13 pulg */
-
-@media screen and (min-width: 900px), (max-width: 1024) {
-  .product-ecommerce {
-    max-width: 28vw;
-  }
-
-  .ecommerce-h2 {
-    margin-left: -0.5rem;
-    font-size: 2.1vmax;
-  }
-
-  .medio-ecommerce {
-    background-image: url('./images/ecommerce.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    box-shadow: inset 0px -50px 20px 0px rgba(15, 189, 199, 1);
-  }
-
-  .h2-mejores-promos {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 1px 1px 2px black;
-    height: 23vh;
-  }
-
-  .ropa-img2 {
-    padding: 0.1rem;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 0.5rem;
-  }
-}
-
-/* Laptop 16 pulg */
-
-@media screen and (min-width: 1030px), (max-width: 1440) {
-  .product-ecommerce {
-    max-width: 20vw;
-  }
-
-  .ecommerce-h2 {
-    margin-left: -0.5rem;
-    font-size: 1.4vmax;
-  }
-
-  .medio-ecommerce {
-    background-image: url('./images/ecommerce.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    box-shadow: inset 0px -50px 20px 0px rgba(15, 189, 199, 1);
-  }
-
-  .h2-mejores-promos {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 1px 1px 2px black;
-    height: 23vh;
-  }
-
-  .ropa-img2 {
-    padding: 0.1rem;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 0.5rem;
-  }
-}
-
-/* Pantallas */
-
-@media screen and (min-width: 1450px), (max-width: 2560) {
-  .product-ecommerce {
-    max-width: 15vw;
-  }
-
-  .ecommerce-h2 {
-    margin-left: -0.5rem;
-    font-size: 1.1vmax;
-  }
-
-  .medio-ecommerce {
-    background-image: url('./images/ecommerce.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    box-shadow: inset 0px -20px 10px 0px rgba(15, 189, 199, 1);
-    margin-bottom: 0rem;
-  }
-
-  .h2-mejores-promos {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 1px 1px 2px black;
-    max-height: 19.5vh;
-  }
-
-  .ropa-img2 {
-    padding: 0.1rem;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 0.5rem;
-  }
-
-  .ofertas-tendencia {
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    padding-bottom: 0.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #fff;
-    margin: 0 0.5rem 1.5rem 0.5rem;
-  }
 }

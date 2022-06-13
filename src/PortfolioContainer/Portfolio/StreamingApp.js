@@ -56,7 +56,7 @@ const StreamingApp = () => {
                 className="grid-cont-text"
                 container
                 rowSpacing={1}
-                columnSpacing={{ xs: 2, sm: 3, md: -1 }}
+                columnSpacing={{ xs: 0, sm: 0, md: -1 }}
               >
                 <Grid item xs={4}>
                   <ThumbUpIcon sx={{ mt: 5 }} />
@@ -90,7 +90,7 @@ const StreamingApp = () => {
           <div className="parte-medio">
             <Button
               className="boton-play"
-              sx={{ mt: 2, ml: 1.5 }}
+              sx={{ mt: 2 }}
               size="large"
               variant="contained"
               color="error"

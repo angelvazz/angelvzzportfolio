@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import GoogleIcon from '@mui/icons-material/Google';
 import Typical from 'react-typical';
 import Button from '@mui/material/Button';
+import pdf from './angel-vzz-cv.pdf';
 import './Profile.css';
 
 export default function Profile() {
@@ -52,7 +53,7 @@ export default function Profile() {
             <Button sx={{ mr: 1 }} variant="outlined" size="large">
               Hire Me
             </Button>
-            <Button variant="contained" size="large" href="angel-vzz-cv.pdf">
+            <Button variant="contained" size="large" href={pdf}>
               Get Resume
             </Button>
           </div>
