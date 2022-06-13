@@ -1,54 +1,51 @@
-.card-component-two{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: rgb(255, 255, 255);
+.card-component-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgb(255, 255, 255);
 }
 
-
-.card-border-two{
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 5px 10px 0px rgb(0, 0, 0);
-    border-radius: 2%;
-    
+.card-border-two {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px 0px rgb(0, 0, 0);
+  border-radius: 2%;
 }
 
-.card-text-two{
-    padding-top: 1rem;
+.card-text-two {
+  padding-top: 1rem;
 }
 
-.card-text-two span{
-    font-size: 25px;
-    text-decoration:underline;
+.card-text-two span {
+  font-size: 25px;
+  text-decoration: underline;
 }
 
-.card-image-two img{
-    width: 40vw;
-    height: 60vh;
-    border-radius: 2%;
+.card-image-two img {
+  width: 40vw;
+  height: 60vh;
+  border-radius: 2%;
 }
 
-.card-object-two{
-    width: 80vw;
+.card-object-two {
+  width: 80vw;
 }
 
-.card-object-two p{
-    margin-top: 1rem;
-    font-size: 20px;
+.card-object-two p {
+  margin-top: 1rem;
+  font-size: 20px;
 }
 
-.card-object-two ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    list-style-type: none;
-    padding: 0;
+.card-object-two ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
 }
 
-.card-object-two li{
-    padding: .5rem;
+.card-object-two li {
+  padding: 0.5rem;
 }
-

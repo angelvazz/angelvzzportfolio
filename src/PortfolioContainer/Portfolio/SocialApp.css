@@ -1,0 +1,85 @@
+.social-h2 {
+  margin-left: -2rem;
+  font-size: 1.4vmax;
+}
+
+.product-social {
+  background: #fff;
+  border-radius: 1rem;
+  max-width: 20vw;
+  max-height: 85vh;
+}
+
+.title-social {
+  color: #fff;
+  border-top-right-radius: 0.9rem;
+  border-top-left-radius: 0.9rem;
+  background-color: rgb(0, 69, 133);
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid #fff;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* medio */
+
+.paper-uno {
+  background-image: url(./images/paraguas.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.paper-dos {
+  background-image: url(./images/rubia.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.paper-tres {
+  background-image: url(./images/lentes.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.medio-social {
+  margin-bottom: 0.5rem;
+  max-height: 65vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.medio-social::-webkit-scrollbar {
+  display: none;
+}
+
+.cont-check {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cont-avatar {
+  display: flex;
+}
+
+/* abajo */
+
+.abajo-social {
+  border-top: 1px solid #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Imagenes */
+.ecommerce-img {
+  max-height: 19vh;
+  max-width: 30vw;
+}
+
+.ropa-img {
+  max-width: 10vw;
+}

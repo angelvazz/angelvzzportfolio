@@ -4,6 +4,7 @@ import Profile from './Profile';
 import AboutMe from '../AboutMe/AboutMe';
 import './Home.css';
 import NavBar from '../../components/NavBar';
+import Portfolio from '../Portfolio/Portfolio';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Profile />
       <Footer />
       <AboutMe />
+      <Portfolio />
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.container-portfolio {
+  margin-bottom: 2.5rem;
+}
+
+.title-portfolio {
+  color: azure;
+  font-size: 30px;
+  margin-top: 2.5rem;
+}
+.portfolio {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}

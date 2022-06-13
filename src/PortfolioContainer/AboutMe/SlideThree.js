@@ -1,27 +1,38 @@
-import React from 'react'
-import './SlideThree.css'
+import React from 'react';
+import { db, cloud } from '../../components/iconList';
+import MiniCard from '../../components/miniCard';
+import './SlideThree.css';
 
 const SlideThree = () => {
-    return (
-        <div className='card-component'>
-             <div className='card-border'>
-            <div className='card-body'>
-               
-                    <div className='card-text'>
-                        <span>Work Experience</span>
-                        <p>I'm three-year full stack web developer, my skills are
-                            MERN and CRUD applications, my professional goal is
-                            to contribute in projects that challenge me and
-                            enhance my skills.</p>
-                           
-                    </div>
-                    <div className='card-image'>
-                        <img src='https://images.pexels.com/photos/340152/pexels-photo-340152.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='me' />
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="card-component">
+      <div className="card-object-two">
+        <p>Data Base</p>
+        <ul>
+          {db.map((element, index) => {
+            return (
+              <li key={index}>
+                <MiniCard card={element} />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
 
-export default SlideThree
+      <div className="card-object-two">
+        <p>Cloud</p>
+        <ul>
+          {cloud.map((element, index) => {
+            return (
+              <li key={index}>
+                <MiniCard card={element} />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default SlideThree;

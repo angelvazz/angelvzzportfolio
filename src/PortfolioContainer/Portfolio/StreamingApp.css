@@ -1,0 +1,89 @@
+.product-h1 {
+  color: #fff;
+}
+
+.streaming-h2 {
+  margin-left: -1.5rem;
+  font-size: 1.4vmax;
+}
+
+.streaming-cont {
+  background: rgb(0, 0, 0);
+  border-radius: 1rem;
+  max-width: 20vw;
+  max-height: 85vh;
+}
+
+.parte-arriba {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid black;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.parte-fotos {
+  display: flex;
+  background-image: url('./images/stranger.jpg');
+  background-size: 20vw;
+  background-repeat: no-repeat;
+  box-shadow: inset -5px -70px 20px 10px rgb(0, 0, 0);
+}
+
+.cont-grid {
+  margin-top: 9rem;
+  margin-left: 2rem;
+}
+
+.grid-cont-text {
+  color: #fff;
+}
+
+/* medio */
+
+.medio {
+  max-height: 65vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.medio::-webkit-scrollbar {
+  display: none;
+}
+
+.parte-medio {
+  background-color: black;
+  margin-bottom: 0.5rem;
+}
+
+.boton-play {
+  max-width: 18.7vw;
+  width: 100%;
+}
+
+.p-stranger {
+  padding: 1rem;
+  color: #fff;
+}
+
+/* abajo */
+
+.abajo-streaming {
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+/* Imagenes */
+
+.stranger-logo {
+  border-radius: 1rem;
+  max-width: 5vw;
+  margin-top: 8rem;
+  margin-left: 1rem;
+}
