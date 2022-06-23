@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/angelvzzportfolio/static/css/main.8bd6b046.chunk.css",
+    "main.js": "/angelvzzportfolio/static/js/main.9a5ff87d.chunk.js",
+    "main.js.map": "/angelvzzportfolio/static/js/main.9a5ff87d.chunk.js.map",
+    "runtime-main.js": "/angelvzzportfolio/static/js/runtime-main.432770a3.js",
+    "runtime-main.js.map": "/angelvzzportfolio/static/js/runtime-main.432770a3.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/angelvzzportfolio/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.b9257312.chunk.js": "/angelvzzportfolio/static/js/2.b9257312.chunk.js",
+    "static/js/2.b9257312.chunk.js.map": "/angelvzzportfolio/static/js/2.b9257312.chunk.js.map",
+    "index.html": "/angelvzzportfolio/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/angelvzzportfolio/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.8bd6b046.chunk.css.map": "/angelvzzportfolio/static/css/main.8bd6b046.chunk.css.map",
+    "static/js/2.b9257312.chunk.js.LICENSE.txt": "/angelvzzportfolio/static/js/2.b9257312.chunk.js.LICENSE.txt",
+    "static/media/angel-vzz-cv.2949d0c8.pdf": "/angelvzzportfolio/static/media/angel-vzz-cv.2949d0c8.pdf",
+    "static/media/armario.15d14ccc.jpg": "/angelvzzportfolio/static/media/armario.15d14ccc.jpg",
+    "static/media/bici.94541e7a.jpg": "/angelvzzportfolio/static/media/bici.94541e7a.jpg",
+    "static/media/contactus.f06f9f46.svg": "/angelvzzportfolio/static/media/contactus.f06f9f46.svg",
+    "static/media/EcommerceApp.css": "/angelvzzportfolio/static/media/ecommerce.d1bb3263.jpg",
+    "static/media/SocialApp.css": "/angelvzzportfolio/static/media/rubia.775f6c28.jpg",
+    "static/media/mochila.b79aca3a.jpg": "/angelvzzportfolio/static/media/mochila.b79aca3a.jpg",
+    "static/media/people.0c4a16df.jpg": "/angelvzzportfolio/static/media/people.0c4a16df.jpg",
+    "static/media/Profile.css": "/angelvzzportfolio/static/media/pexels-thisisengineering-3861959.7a8c414b.jpg",
+    "static/media/ropa.0ef5e3f4.jpg": "/angelvzzportfolio/static/media/ropa.0ef5e3f4.jpg",
+    "static/media/stranger-logo.c4d4e0a7.jpg": "/angelvzzportfolio/static/media/stranger-logo.c4d4e0a7.jpg",
+    "static/media/StreamingApp.css": "/angelvzzportfolio/static/media/stranger.33c817f8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.432770a3.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.b9257312.chunk.js",
+    "static/css/main.8bd6b046.chunk.css",
+    "static/js/main.9a5ff87d.chunk.js"
+  ]
+}
