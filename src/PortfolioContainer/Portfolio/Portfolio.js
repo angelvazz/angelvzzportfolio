@@ -4,9 +4,9 @@ import SocialApp from './SocialApp';
 import StreamingApp from './StreamingApp';
 import './Portfolio.css';
 
-const Portfolio = () => {
+const Portfolio = ({ portfolio }) => {
   return (
-    <div className="container-portfolio">
+    <div className="container-portfolio" ref={portfolio}>
       <h1 className="title-portfolio">Portfolio</h1>
       <div className="portfolio">
         <SocialApp />

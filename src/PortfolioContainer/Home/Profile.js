@@ -7,9 +7,9 @@ import Button from '@mui/material/Button';
 import pdf from './angel-vzz-cv.pdf';
 import './Profile.css';
 
-export default function Profile() {
+export default function Profile({ aboutMe }) {
   return (
-    <div className="profile-container">
+    <div className="profile-container" ref={aboutMe}>
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">

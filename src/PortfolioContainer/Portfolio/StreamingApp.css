@@ -10,8 +10,8 @@
 .streaming-cont {
   background: rgb(0, 0, 0);
   border-radius: 1rem;
-  max-width: 20vw;
-  max-height: 85vh;
+  max-width: 22.4vw;
+  max-height: 88vh;
 }
 
 .parte-arriba {
@@ -26,7 +26,7 @@
 .parte-fotos {
   display: flex;
   background-image: url('./images/stranger.jpg');
-  background-size: 20vw;
+  background-size: 22.4vw;
   background-repeat: no-repeat;
   box-shadow: inset 0px -130px 10px 10px rgb(0, 0, 0);
 }
@@ -84,4 +84,39 @@
   max-width: 5vw;
   margin-top: 8rem;
   margin-left: 0.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .streaming-h2 {
+    margin-left: -1rem;
+    font-size: 2.1vmax;
+  }
+  .streaming-cont {
+    background: rgb(0, 0, 0);
+    border-radius: 1rem;
+    max-width: 80vw;
+    max-height: 88vh;
+    margin-bottom: 1rem;
+  }
+  .parte-fotos {
+    display: flex;
+    background-image: url('./images/stranger.jpg');
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -100px 10px 10px rgb(0, 0, 0);
+  }
+  .stranger-logo {
+    border-radius: 1rem;
+    max-width: 20vw;
+    margin-top: 8rem;
+    margin-left: 0.8rem;
+  }
+  .abajo-streaming {
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }

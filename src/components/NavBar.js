@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 //Icons
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import HomeIcon from '@mui/icons-material/Home';
 import PersonSearchIcon from '@mui/icons-material/PersonSearch';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import DevicesIcon from '@mui/icons-material/Devices';
@@ -15,14 +14,47 @@ import { Box } from '@mui/system';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 
-export default function NavBar() {
+export default function NavBar({
+  aboutMe,
+  technologies,
+  portfolio,
+  contactMe,
+}) {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
+  const [y, setY] = useState(0);
+  console.log(window.scrollY);
+
+  useEffect(() => {
+    const detectY = () => setY(window.pageYOffset);
+    window.addEventListener('scroll', detectY);
+  }, [y]);
+
+  const aboutMeClick = () =>
+    window.scrollTo({ top: aboutMe.current.offsetTop, behavior: 'smooth' });
+
+  const technologiesClick = () =>
+    window.scrollTo({
+      top: technologies.current.offsetTop - 30,
+      behavior: 'smooth',
+    });
+
+  const portfolioClick = () =>
+    window.scrollTo({
+      top: portfolio.current.offsetTop - 30,
+      behavior: 'smooth',
+    });
+
+  const contactMeClick = () =>
+    window.scrollTo({
+      top: contactMe.current.offsetTop - 30,
+      behavior: 'smooth',
+    });
 
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="relative" color="transparent">
+        <AppBar position="fixed" color={y > 10 ? 'secondary' : 'transparent'}>
           <Toolbar>
             <Typography
               className="nav-menu-link"
@@ -30,7 +62,9 @@ export default function NavBar() {
               variant="button"
               sx={{ flexGrow: 1 }}
             >
-              <Link to="/">About Me</Link>
+              <Link to="/" onClick={aboutMeClick}>
+                About Me
+              </Link>
             </Typography>
             <Typography
               className="nav-menu-link"
@@ -38,7 +72,9 @@ export default function NavBar() {
               variant="button"
               sx={{ flexGrow: 1 }}
             >
-              <Link to="/">Technologies</Link>
+              <Link to="/" onClick={technologiesClick}>
+                Technologies
+              </Link>
             </Typography>
             <Typography
               className="nav-menu-link"
@@ -46,7 +82,9 @@ export default function NavBar() {
               variant="button"
               sx={{ flexGrow: 1 }}
             >
-              <Link to="/">Portfolio</Link>
+              <Link to="/" onClick={portfolioClick}>
+                Portfolio
+              </Link>
             </Typography>
             <Typography
               className="nav-menu-link"
@@ -54,7 +92,9 @@ export default function NavBar() {
               variant="button"
               sx={{ flexGrow: 1 }}
             >
-              <Link to="/">Contact</Link>
+              <Link to="/" onClick={contactMeClick}>
+                Contact
+              </Link>
             </Typography>
 
             <div className="nav-menu-mobile">
@@ -70,38 +110,38 @@ export default function NavBar() {
               <ul className="nav-menu-items" onClick={showSidebar}>
                 <li className="navbar-toggle">
                   <DataObjectIcon color="primary" />
-                  SBT
+                  Full Resposive
                   <Link className="link-menu" to="/#">
                     <CloseIcon color="primary" />
                   </Link>
                 </li>
+
                 <li className="navbar-toggle">
-                  <Link className="link-menu" to="/#">
-                    <HomeIcon sx={{ mr: 1 }} /> Home
-                  </Link>{' '}
-                </li>
-                <li className="navbar-toggle">
-                  <Link className="link-menu" to="/#">
+                  <Link className="link-menu" to="/#" onClick={aboutMeClick}>
                     <PersonSearchIcon sx={{ mr: 1 }} />
-                    About Us
+                    About Me
                   </Link>
                 </li>
                 <li className="navbar-toggle">
-                  <Link className="link-menu" to="/#">
+                  <Link
+                    className="link-menu"
+                    to="/#"
+                    onClick={technologiesClick}
+                  >
                     <BarChartIcon sx={{ mr: 1 }} />
-                    Goals
+                    Technologies
                   </Link>
                 </li>
                 <li className="navbar-toggle">
-                  <Link className="link-menu" to="/#">
+                  <Link className="link-menu" to="/#" onClick={portfolioClick}>
                     <DevicesIcon sx={{ mr: 1 }} />
-                    Products
+                    Portfolio
                   </Link>
                 </li>
                 <li className="navbar-toggle">
-                  <Link className="link-menu" to="/#">
+                  <Link className="link-menu" to="/#" onClick={contactMeClick}>
                     <ContactMailIcon sx={{ mr: 1 }} />
-                    Contact
+                    Contact Me
                   </Link>
                 </li>
               </ul>
