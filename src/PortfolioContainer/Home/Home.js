@@ -21,7 +21,7 @@ export default function Home() {
         portfolio={portfolio}
         contactMe={contactMe}
       />
-      <Profile aboutMe={aboutMe} />
+      <Profile aboutMe={aboutMe} contactMe={contactMe} />
       <Footer />
       <AboutMe technologies={technologies} />
       <Portfolio portfolio={portfolio} />

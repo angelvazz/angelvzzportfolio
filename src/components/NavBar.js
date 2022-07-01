@@ -62,7 +62,7 @@ export default function NavBar({
               variant="button"
               sx={{ flexGrow: 1 }}
             >
-              <Link to="/" onClick={aboutMeClick}>
+              <Link to="" onClick={aboutMeClick}>
                 About Me
               </Link>
             </Typography>
@@ -72,7 +72,7 @@ export default function NavBar({
               variant="button"
               sx={{ flexGrow: 1 }}
             >
-              <Link to="/" onClick={technologiesClick}>
+              <Link to="" onClick={technologiesClick}>
                 Technologies
               </Link>
             </Typography>
@@ -82,7 +82,7 @@ export default function NavBar({
               variant="button"
               sx={{ flexGrow: 1 }}
             >
-              <Link to="/" onClick={portfolioClick}>
+              <Link to="" onClick={portfolioClick}>
                 Portfolio
               </Link>
             </Typography>
@@ -92,13 +92,13 @@ export default function NavBar({
               variant="button"
               sx={{ flexGrow: 1 }}
             >
-              <Link to="/" onClick={contactMeClick}>
+              <Link to="" onClick={contactMeClick}>
                 Contact
               </Link>
             </Typography>
 
             <div className="nav-menu-mobile">
-              <Link to="#">
+              <Link to="">
                 <MenuIcon
                   color="primary"
                   sx={{ ml: 2 }}
@@ -117,29 +117,25 @@ export default function NavBar({
                 </li>
 
                 <li className="navbar-toggle">
-                  <Link className="link-menu" to="/#" onClick={aboutMeClick}>
+                  <Link className="link-menu" to="" onClick={aboutMeClick}>
                     <PersonSearchIcon sx={{ mr: 1 }} />
                     About Me
                   </Link>
                 </li>
                 <li className="navbar-toggle">
-                  <Link
-                    className="link-menu"
-                    to="/#"
-                    onClick={technologiesClick}
-                  >
+                  <Link className="link-menu" to="" onClick={technologiesClick}>
                     <BarChartIcon sx={{ mr: 1 }} />
                     Technologies
                   </Link>
                 </li>
                 <li className="navbar-toggle">
-                  <Link className="link-menu" to="/#" onClick={portfolioClick}>
+                  <Link className="link-menu" to="" onClick={portfolioClick}>
                     <DevicesIcon sx={{ mr: 1 }} />
                     Portfolio
                   </Link>
                 </li>
                 <li className="navbar-toggle">
-                  <Link className="link-menu" to="/#" onClick={contactMeClick}>
+                  <Link className="link-menu" to="" onClick={contactMeClick}>
                     <ContactMailIcon sx={{ mr: 1 }} />
                     Contact Me
                   </Link>

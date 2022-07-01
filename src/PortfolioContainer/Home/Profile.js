@@ -7,7 +7,12 @@ import Button from '@mui/material/Button';
 import pdf from './angel-vzz-cv.pdf';
 import './Profile.css';
 
-export default function Profile({ aboutMe }) {
+export default function Profile({ aboutMe, contactMe }) {
+  const contactMeClick = () =>
+    window.scrollTo({
+      top: contactMe.current.offsetTop - 30,
+      behavior: 'smooth',
+    });
   return (
     <div className="profile-container" ref={aboutMe}>
       <div className="profile-parent">
@@ -21,15 +26,12 @@ export default function Profile({ aboutMe }) {
           </div>
           <div className="profile-details-name">
             <span className="primary-text">
-              {' '}
               Hello, I'm <span className="highlighted-text">Angel Vazquez</span>
             </span>
           </div>
           <div className="profile-details-role">
             <span className="primary-text">
-              {' '}
               <h1>
-                {' '}
                 <Typical
                   steps={[
                     'MERN Stack Developer',
@@ -50,7 +52,12 @@ export default function Profile({ aboutMe }) {
             </span>
           </div>
           <div className="profile-options">
-            <Button sx={{ mr: 1 }} variant="outlined" size="large">
+            <Button
+              sx={{ mr: 1 }}
+              variant="outlined"
+              size="large"
+              onClick={contactMeClick}
+            >
               Hire Me
             </Button>
             <Button variant="contained" size="large" href={pdf}>
